@@ -1,5 +1,5 @@
-train: ../../gdrive/My Drive/COCO_Darknet/people100/images/  # custom selected data 
-val: ../../gdrive/My Drive/COCO_Darknet/people100/images/  # 128 images
+train: ../gdrive/My Drive/COCO_Darknet/people100/images/  # custom selected data 
+val: ../gdrive/My Drive/COCO_Darknet/people100/images/  # 128 images
 
 # number of classes
 nc: 80
