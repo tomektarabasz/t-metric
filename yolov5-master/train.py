@@ -352,6 +352,12 @@ def train(hyp, opt, device, tb_writer=None):
                                                  dataloader=testloader,
                                                  save_dir=log_dir)
 
+            # Write json
+            import json
+            with open(results_file+".json","a") as ff:
+              result_in_js = json.dumps(results)
+              ff.write(result_in_js)
+
             # Write
             with open(results_file, 'a') as f:
                 f.write(s + '%10.4g' * 7 % results + '\n')  # P, R, mAP, F1, test_losses=(GIoU, obj, cls)
